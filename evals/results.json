@@ -1,0 +1,109 @@
+{
+  "ranAt": "2026-11-20T00:06:20.845Z",
+  "summary": {
+    "cases": 3,
+    "passed": 2,
+    "failed": 1,
+    "errors": 0,
+    "hardChecks": "10/11"
+  },
+  "outcomes": [
+    {
+      "file": "job1.JPEG",
+      "status": "pass",
+      "tone": "formal",
+      "seconds": 87.715,
+      "checks": [
+        {
+          "name": "title contains \"data scientist\"",
+          "pass": true,
+          "detail": "got: Sr. Data Scientist"
+        },
+        {
+          "name": "found skill \"SQL\"",
+          "pass": true
+        },
+        {
+          "name": "fact-check guardrail passed",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "letter uses the candidate's name",
+          "pass": true
+        },
+        {
+          "name": "no [placeholder] text",
+          "pass": true
+        },
+        {
+          "name": "word count fits \"formal\" (150-260)",
+          "pass": true,
+          "soft": true,
+          "detail": "189 words"
+        },
+        {
+          "name": "does not mention skills missing from the profile",
+          "pass": false,
+          "soft": true,
+          "detail": "Python, SQL, forecasting"
+        }
+      ]
+    },
+    {
+      "file": "job2.JPEG",
+      "status": "pass",
+      "tone": "friendly",
+      "seconds": 46.188,
+      "checks": [
+        {
+          "name": "title contains \"react native\"",
+          "pass": true,
+          "detail": "got: Software Engineer – React Native"
+        },
+        {
+          "name": "found skill \"REST APIs\"",
+          "pass": true
+        },
+        {
+          "name": "fact-check guardrail passed",
+          "pass": true,
+          "detail": ""
+        },
+        {
+          "name": "letter uses the candidate's name",
+          "pass": true
+        },
+        {
+          "name": "no [placeholder] text",
+          "pass": true
+        },
+        {
+          "name": "word count fits \"friendly\" (120-220)",
+          "pass": true,
+          "soft": true,
+          "detail": "167 words"
+        },
+        {
+          "name": "does not mention skills missing from the profile",
+          "pass": false,
+          "soft": true,
+          "detail": "REST APIs"
+        }
+      ]
+    },
+    {
+      "file": "not-a-job.JPEG",
+      "status": "fail",
+      "tone": "formal",
+      "seconds": 51.711,
+      "checks": [
+        {
+          "name": "rejects an image that is not a job",
+          "pass": false,
+          "detail": "agent treated it as a job"
+        }
+      ]
+    }
+  ]
+}

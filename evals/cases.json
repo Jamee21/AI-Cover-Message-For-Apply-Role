@@ -1,0 +1,20 @@
+[
+  {
+    "file": "job1.JPEG",
+    "isJobPosting": true,
+    "titleContains": "data scientist",
+    "mustHaveSkills": ["SQL"],
+    "tone": "formal"
+  },
+  {
+    "file": "job2.JPEG",
+    "isJobPosting": true,
+    "titleContains": "react native",
+    "mustHaveSkills": ["REST APIs"],
+    "tone": "friendly"
+  },
+  {
+    "file": "not-a-job.JPEG",
+    "isJobPosting": false
+  }
+]
